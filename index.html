@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michele Martinelli - Sito Personale</title>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="stili.css">
 </head>
-
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container">
+        <div class="container-fluid px-4">
             <a class="navbar-brand fw-bold" href="#chi-sono">
-                MICHELE MARTINELLI <span class="fw-light text-secondary mx-2">|</span> <span
-                    class="fw-light subtitle-nav">Chi sono</span>
+                MICHELE MARTINELLI <span class="fw-light text-secondary mx-2">|</span>
+                <span class="fw-light subtitle-nav">Chi sono</span>
             </a>
-
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown">
@@ -32,7 +27,6 @@
                             <li><a class="dropdown-item" href="progetti.html#progetti">Progetti Extrascolastici</a></li>
                         </ul>
                     </li>
-
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Materie Tecniche</a>
                         <ul class="dropdown-menu">
@@ -40,138 +34,149 @@
                             <li><a class="dropdown-item" href="tecniche.html#sistemi">Sistemi e Reti</a></li>
                             <li><a class="dropdown-item" href="tecniche.html#tpsit">T.P.S.I.T.</a></li>
                             <li><a class="dropdown-item" href="tecniche.html#gpoi">G.P.O.I.</a></li>
-                            <li><a class="dropdown-item" href="tecniche.html#ia">I.A. (Intelligenza Artificiale)</a>
-                            </li>
+                            <li><a class="dropdown-item" href="tecniche.html#ia">I.A. (Intelligenza Artificiale)</a></li>
                         </ul>
                     </li>
-
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Materie
-                            Letterarie</a>
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Materie Letterarie</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="letterarie.html#italiano">Italiano</a></li>
                             <li><a class="dropdown-item" href="letterarie.html#inglese">Inglese</a></li>
                             <li><a class="dropdown-item" href="letterarie.html#storia">Storia</a></li>
                         </ul>
                     </li>
-
                     <li class="nav-item"><a class="nav-link" href="civica.html">Educazione Civica</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contattami">Contatti</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <main class="container my-5">
-        <div class="row g-4">
+    <!-- ===== PIANO 1: Hero ===== -->
+    <section id="chi-sono" class="hero-section">
 
-            <div id="chi-sono" class="col-lg-4">
-                <div class="card profile-card">
-                    <div class="preview-box h-50" style="
-                        background-image: url('io.jpg');
-                        background-size: cover;
-                        background-position: center 30%;
-                        background-repeat: no-repeat;
-                         ">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Presentazione</h4>
-                        <p class="card-text">Studente di Informatica e Telecomunicazioni presso IIS Marconi Jesi, AN.
-                            Appassionato di sviluppo software, sistemi, elettronica e con tanta voglia di imparare.</p>
-                        <hr>
-                        <ul class="list-unstyled small">
-                            <li><strong>Certificazioni:</strong> Cambridge B2, Corsi di business plan, Pitch e grafica
-                            </li>
-                            <li><strong>Hobby e passioni:</strong> Biliardo, palestra, elettronica, informatica</li>
-                        </ul>
-                        <a href="curriculum.pdf" class="btn btn-outline-dark btn-sm w-100 mt-2">Scarica CV (PDF)</a>
-                        <a href="curriculumSt.pdf" class="btn btn-outline-dark btn-sm w-100 mt-2">Scarica CV Studente (PDF)</a>
-                        <div class="mt-3">
-                            <h6 class="small fw-bold text-uppercase">Skill Rapide:</h6>
-                            <span class="badge skill-badge">Java</span>
-                            <span class="badge skill-badge">Python</span>
-                            <span class="badge skill-badge">HTML, CSS, PHP</span>
-                            <span class="badge skill-badge">C# & C</span>
-                            <span class="badge skill-badge">MySQL</span>
-                            <span class="badge skill-badge">Sistemi e reti</span>
-                            <span class="badge skill-badge">IA</span>
-                        </div>
-                    </div>
+        <!-- Sfondo animato -->
+        <div class="hero-glow"></div>
+        <div class="hero-shapes">
+            <span></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <!-- Foto sinistra -->
+        <div class="hero-photo">
+            <img src="io.jpg" alt="Michele Martinelli" onload="this.classList.add('loaded')">
+            <div class="hero-divider"></div>
+        </div>
+
+        <!-- Contenuto destra -->
+        <div class="hero-content">
+
+            <div class="hero-tag">Informatica &amp; Telecomunicazioni</div>
+
+            <h1 class="hero-name">Michele<br>Martinelli</h1>
+            <p class="hero-role">IIS Marconi · Jesi, Ancona</p>
+
+            <div class="hero-bio">
+                <p>
+                    Studente appassionato di sviluppo software, sistemi e elettronica.
+                    Sempre curioso, sempre in movimento — con la voglia di trasformare
+                    ogni problema in un progetto concreto.
+                </p>
+            </div>
+
+            <div class="hero-info">
+                <div class="hero-info-item">
+                    <span class="hero-info-label">Certificazioni</span>
+                    <span class="hero-info-value">Cambridge B2 · Business plan · Pitch · Grafica</span>
+                </div>
+                <div class="hero-info-item">
+                    <span class="hero-info-label">Passioni</span>
+                    <span class="hero-info-value">Biliardo · Palestra · Elettronica · Informatica</span>
                 </div>
             </div>
 
-            <div class="col-lg-8">
-                <h3 class="section-heading">In evidenza</h3>
-                <div class="row g-3">
-                    <div class="col-md-6">
-                        <div class="card project-card">
-                            <div class="preview-box"
-                                style="background-image: url('progetti.jpg'); background-size: cover;"></div>
-                            <div class="card-body">
-                                <h5 class="card-title">Portfolio Progetti</h5>
-                                <p class="card-text small text-muted">Esplora la mia esperienza di pcto ed i miei grandi
-                                    progetti.</p>
-                                <a href="progetti.html" class="btn btn-sm btn-outline-secondary">Vai ai Progetti</a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="hero-skills">
+                <span class="badge skill-badge">Java</span>
+                <span class="badge skill-badge">Python</span>
+                <span class="badge skill-badge">HTML · CSS · PHP</span>
+                <span class="badge skill-badge">C# &amp; C</span>
+                <span class="badge skill-badge">MySQL</span>
+                <span class="badge skill-badge">Sistemi e reti</span>
+                <span class="badge skill-badge">IA</span>
+            </div>
 
-                    <div class="col-md-6" id="civica">
-                        <div class="card project-card">
-                            <div class="preview-box" style="background-image: url('ed.jpg'); background-size: cover;">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Educazione Civica</h5>
-                                <p class="card-text small text-muted">Principali argomenti trattati.</p>
-                                <a href="civica.html" class="btn btn-sm btn-outline-secondary">Leggi di più</a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="hero-buttons">
+                <a href="curriculum.pdf" class="btn-cv-primary">Scarica CV</a>
+                <a href="curriculumSt.pdf" class="btn-cv-outline">CV Studente</a>
+            </div>
 
-                    <div class="col-md-6">
-                        <div class="card project-card">
-                            <div class="preview-box" style="background-image: url('tcn.jpg'); background-size: cover;">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Materie tecniche</h5>
-                                <p class="card-text small text-muted">Scopri il mio percorso di studio tecnico in modo
-                                    approfondito per argomenti.</p>
-                                <a href="tecniche.html" class="btn btn-sm btn-outline-secondary">Scopri di più</a>
+        </div>
+    </section>
 
-                            </div>
-                        </div>
-                    </div>
+    <!-- ===== PIANO 2: Le 4 card ===== -->
+    <section class="cards-section">
+        <div class="container-fluid px-4 px-lg-5">
+            <h3 class="section-heading">In evidenza</h3>
+            <div class="row g-4">
 
-                    <div class="col-md-6">
-                        <div class="card project-card">
-                            <div class="preview-box" style="background-image: url('lett.jpg'); background-size: cover;">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Materie letterarie</h5>
-                                <p class="card-text small text-muted">"Verba volant, scripta manent", tutti gli
-                                    argomenti letterari più importanti affrontati.</p>
-                                <a href="letterarie.html" class="btn btn-sm btn-outline-secondary">Scopri di più</a>
-                            </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="card project-card">
+                        <div class="preview-box-lg" style="background-image:url('progetti.jpg'); background-size:cover; background-position:center;"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Portfolio Progetti</h5>
+                            <p class="card-text text-muted">Esplora la mia esperienza di PCTO ed i miei grandi progetti extrascolastici.</p>
+                            <a href="progetti.html" class="btn btn-sm btn-outline-secondary mt-2">Vai ai Progetti</a>
                         </div>
                     </div>
                 </div>
+
+                <div class="col-md-6 col-xl-3" id="civica">
+                    <div class="card project-card">
+                        <div class="preview-box-lg" style="background-image:url('ed.jpg'); background-size:cover; background-position:center;"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Educazione Civica</h5>
+                            <p class="card-text text-muted">Principali argomenti trattati durante il percorso scolastico.</p>
+                            <a href="civica.html" class="btn btn-sm btn-outline-secondary mt-2">Leggi di più</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="card project-card">
+                        <div class="preview-box-lg" style="background-image:url('tcn.jpg'); background-size:cover; background-position:center;"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Materie Tecniche</h5>
+                            <p class="card-text text-muted">Scopri il mio percorso di studio tecnico in modo approfondito per argomenti.</p>
+                            <a href="tecniche.html" class="btn btn-sm btn-outline-secondary mt-2">Scopri di più</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="card project-card">
+                        <div class="preview-box-lg" style="background-image:url('lett.jpg'); background-size:cover; background-position:center;"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Materie Letterarie</h5>
+                            <p class="card-text text-muted">"Verba volant, scripta manent" — tutti gli argomenti letterari più importanti affrontati.</p>
+                            <a href="letterarie.html" class="btn btn-sm btn-outline-secondary mt-2">Scopri di più</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </main>
+    </section>
 
     <hr>
 
+    <!-- ===== Contattami ===== -->
     <section id="contattami" class="py-5 bg-white">
         <div class="container">
             <div class="row justify-content-center mb-4">
                 <div class="col-lg-8 text-center">
                     <h2 class="fw-bold text-dark">Contattami</h2>
-                    <p class="text-muted">
-                        Hai una domanda, una proposta o vuoi collaborare? Scrivimi!
-                    </p>
+                    <p class="text-muted">Hai una domanda, una proposta o vuoi collaborare? Scrivimi!</p>
                 </div>
             </div>
-
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <form>
@@ -179,22 +184,16 @@
                             <label for="nome" class="form-label text-dark">Nome</label>
                             <input type="text" class="form-control" id="nome" placeholder="Il tuo nome" required>
                         </div>
-
                         <div class="mb-3">
                             <label for="email" class="form-label text-dark">Email</label>
                             <input type="email" class="form-control" id="email" placeholder="nome@email.com" required>
                         </div>
-
                         <div class="mb-3">
                             <label for="messaggio" class="form-label text-dark">Messaggio</label>
-                            <textarea class="form-control" id="messaggio" rows="5"
-                                placeholder="Scrivi qui il tuo messaggio..." required></textarea>
+                            <textarea class="form-control" id="messaggio" rows="5" placeholder="Scrivi qui il tuo messaggio..." required></textarea>
                         </div>
-
                         <div class="d-grid">
-                            <button type="submit" class="btn btn-dark">
-                                Invia messaggio
-                            </button>
+                            <button type="submit" class="btn btn-dark">Invia messaggio</button>
                         </div>
                     </form>
                 </div>
@@ -204,8 +203,7 @@
 
     <hr>
 
-
-    <footer class="bg-dark text-white py-4 mt-5" id="contatti">
+    <footer class="bg-dark text-white py-4" id="contatti">
         <div class="container text-center">
             <p class="mb-2">Michele Martinelli, AN</p>
             <p class="text-secondary small">© 2026</p>
@@ -214,5 +212,4 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
