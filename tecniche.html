@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materie Tecniche - Michele Martinelli</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="stiliPag.css">
+</head>
+<body class="bg-light">
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+            MICHELE MARTINELLI <span class="fw-light text-secondary mx-2">|</span> <span class="fw-light subtitle-nav">Home</span>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Progetti</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="progetti.html#pcto">PCTO (Alternanza)</a></li>
+                        <li><a class="dropdown-item" href="progetti.html#progetti">Progetti Extrascolastici</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">Materie Tecniche</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="tecniche.html#informatica">Informatica</a></li>
+                        <li><a class="dropdown-item" href="tecniche.html#sistemi">Sistemi e Reti</a></li>
+                        <li><a class="dropdown-item" href="tecniche.html#tpsit">T.P.S.I.T.</a></li>
+                        <li><a class="dropdown-item" href="tecniche.html#gpoi">G.P.O.I.</a></li>
+                        <li><a class="dropdown-item" href="tecniche.html#ia">I.A. (Intelligenza Artificiale)</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Materie Letterarie</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="letterarie.html#italiano">Italiano</a></li>
+                        <li><a class="dropdown-item" href="letterarie.html#inglese">Inglese</a></li>
+                        <li><a class="dropdown-item" href="letterarie.html#storia">Storia</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="civica.html">Educazione Civica</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contatti">Contatti</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="py-5 bg-white border-bottom mb-5">
+    <div class="container text-center text-md-start">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-2 justify-content-center justify-content-md-start">
+                <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item active">Materie Tecniche</li>
+            </ol>
+        </nav>
+        <div class="d-flex align-items-center justify-content-between flex-column flex-md-row">
+            <h1 class="fw-bold mb-0">Area Tecnica</h1>
+            <a href="index.html" class="btn btn-outline-dark btn-sm mt-3 mt-md-0">← Torna alla Home</a>
+        </div>
+    </div>
+</header>
+
+<main class="container mb-5">
+    <div class="row g-4">
+        <div class="col-lg-3">
+            <div class="card shadow-sm sticky-lg-top" style="top: 100px;">
+                <div class="card-body">
+                    <h5 class="fw-bold mb-3">Indice Materie</h5>
+                    <div class="list-group list-group-flush small">
+                        <a href="#informatica" class="list-group-item list-group-item-action d-flex align-items-center">
+                            <i class="bi bi-code-square me-2"></i> Informatica
+                        </a>
+                        <a href="#sistemi" class="list-group-item list-group-item-action d-flex align-items-center">
+                            <i class="bi bi-diagram-3 me-2"></i> Sistemi e reti
+                        </a>
+                        <a href="#tpsit" class="list-group-item list-group-item-action d-flex align-items-center">
+                            <i class="bi bi-cpu me-2"></i> T.P.S.I.T.
+                        </a>
+                        <a href="#gpoi" class="list-group-item list-group-item-action d-flex align-items-center">
+                            <i class="bi bi-kanban me-2"></i> G.P.O.I.
+                        </a>
+                        <a href="#ia" class="list-group-item list-group-item-action d-flex align-items-center">
+                            <i class="bi bi-robot me-2"></i> I.A.
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-9">
+            
+            <section id="informatica" class="mb-5 shadow-sm p-4 bg-white rounded">
+                <h3 class="section-heading">Informatica</h3>
+                <p class="text-muted">Sviluppo software desktop e web, progettazione database e gestione dinamica dei dati.</p>
+                
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="card project-card p-3 h-100">
+                            <h6 class="fw-bold"><i class="bi bi-window me-2 text-primary"></i>Sviluppo C# & WinForms</h6>
+                            <p class="small text-muted">Studio approfondito del linguaggio C# per la creazione di interfacce Windows Form interattive e robuste.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card project-card p-3 h-100">
+                            <h6 class="fw-bold"><i class="bi bi-database me-2 text-primary"></i>Database & SQL</h6>
+                            <p class="small text-muted">Progettazione ER (Entità-Relazione), traduzione nel modello logico e interrogazione database con MySQL.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-light p-3 mt-3 border-start border-primary border-4">
+                    <h6><i class="bi bi-globe me-2"></i>Web Development: HTML, CSS, JS, PHP</h6>
+                    <p class="small mb-0">Integrazione tra backend in PHP e database per la creazione di pagine web dinamiche.</p>
+                </div>
+            </section>
+
+            <section id="sistemi" class="mb-5 shadow-sm p-4 bg-white rounded">
+                <h3 class="section-heading text-success" style="border-left-color: #198754;">Sistemi e Reti</h3>
+                <p class="text-muted">Architetture hardware, programmazione low-level e infrastrutture di rete complesse.</p>
+                
+                <div class="card project-card p-3 mb-3">
+                    <h6 class="fw-bold"><i class="bi bi-cpu-fill me-2 text-success"></i>Architettura e Assembly</h6>
+                    <p class="small text-muted mb-0">Analisi del Modello di Von Neumann e programmazione in Assembly tramite emu8086 per il controllo dei registri e della memoria.</p>
+                </div>
+
+                <div class="card project-card p-3 mb-3">
+                    <h6 class="fw-bold"><i class="bi bi-layers me-2 text-success"></i>Networking & Protocolli</h6>
+                    <p class="small text-muted mb-0">Studio della pila ISO/OSI e TCP/IP. Gestione di Subnetting, VLAN e servizi fondamentali (DHCP, NAT, DNS, Email, FTP).</p>
+                </div>
+
+                <div class="bg-light p-3 border-start border-success border-4">
+                    <h6><i class="bi bi-terminal me-2"></i>Laboratorio: Cisco Packet Tracer</h6>
+                    <p class="small mb-2">Configurazione di apparati tramite Command Line (IOS) per la simulazione di reti aziendali.</p>
+                    <span class="badge bg-success">Cisco IOS / Routing</span>
+                </div>
+            </section>
+
+            <section id="tpsit" class="mb-5 shadow-sm p-4 bg-white rounded">
+                <h3 class="section-heading text-warning" style="border-left-color: #ffc107;">T.P.S.I.T.</h3>
+                <p class="text-muted">Dalla codifica dell'informazione allo sviluppo mobile e concorrente.</p>
+                
+                <ul class="list-unstyled small">
+                    <li class="mb-2"><i class="bi bi-123 me-2 text-warning"></i><strong>Codifica:</strong> Conversioni tra sistemi binario, ottale ed esadecimale.</li>
+                    <li class="mb-2"><i class="bi bi-gear me-2 text-warning"></i><strong>Sistemi Operativi:</strong> Gestione processi, multithreading, scheduling e Ingegneria del Software.</li>
+                    <li class="mb-2"><i class="bi bi-code-slash me-2 text-warning"></i><strong>Linguaggi:</strong> Sviluppo in C e transizione alla programmazione ad oggetti con Java.</li>
+                </ul>
+
+                <div class="bg-light p-3 border-start border-warning border-4">
+                    <h6><i class="bi bi-phone me-2"></i>Sviluppo Mobile: Android Studio</h6>
+                    <p class="small mb-0">Progettazione e sviluppo di applicazioni native per dispositivi Android.</p>
+                </div>
+            </section>
+
+            <section id="gpoi" class="mb-5 shadow-sm p-4 bg-white rounded">
+                <h3 class="section-heading text-info" style="border-left-color: #0dcaf0;">G.P.O.I.</h3>
+                <p class="text-muted">Organizzazione aziendale, economia e gestione del ciclo di vita del progetto.</p>
+                
+                <div class="card project-card p-3 mb-3">
+                    <h6 class="fw-bold"><i class="bi bi-file-earmark-text me-2 text-info"></i>Analisi e Progettazione Web</h6>
+                    <p class="small text-muted mb-0">Redazione della documentazione completa per la creazione di un sito web, dall'analisi dei requisiti al deployment.</p>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="card project-card p-3 h-100">
+                            <h6 class="fw-bold"><i class="bi bi-cash-coin me-2 text-info"></i>Economia Aziendale</h6>
+                            <p class="small text-muted">Fondamenti di gestione d'impresa e analisi dei costi.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card project-card p-3 h-100">
+                            <h6 class="fw-bold"><i class="bi bi-person-badge me-2 text-info"></i>Risorse Umane</h6>
+                            <p class="small text-muted">Studio e analisi della struttura delle buste paga.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="ia" class="mb-5 shadow-sm p-4 bg-white rounded">
+                <h3 class="section-heading text-danger" style="border-left-color: #dc3545;">I.A. (Intelligenza Artificiale)</h3>
+                <p class="text-muted">Studio dei modelli predittivi e delle reti neurali artificiali.</p>
+                
+                <div class="card project-card p-3 mb-3">
+                    <h6 class="fw-bold"><i class="bi bi-diagram-2 me-2 text-danger"></i>Modelli di Apprendimento</h6>
+                    <p class="small text-muted mb-0">Distinzione tra modelli Supervisionati e Non Supervisionati, con focus sulle architetture delle Reti Neurali.</p>
+                </div>
+
+                <div class="bg-light p-3 border-start border-danger border-4">
+                    <h6><i class="bi bi-google me-2"></i>Progetto Finale: Google Colab</h6>
+                    <p class="small mb-2">Sviluppo di un modello IA capace di apprendere da un dataset specifico per compiti di classificazione o predizione.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="badge bg-dark">Python / Colab</span>
+                        <span class="small text-danger fw-bold text-uppercase">Dataset Training</span>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</main>
+
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <p class="text-secondary small mb-0">© 2026 Michele Martinelli | Portfolio Scolastico</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

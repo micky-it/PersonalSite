@@ -1,0 +1,84 @@
+/* Variabili Globali */
+:root {
+    --primary-dark: #1a252f;
+    --accent-info: #0dcaf0;
+    --light-bg: #f8f9fa;
+    --border-color: #dee2e6;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+    font-size: 1.1rem;
+}
+
+.subtitle-nav {
+    font-size: 0.9rem;
+}
+
+.section-heading {
+    border-left: 4px solid var(--primary-dark);
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+
+.profile-card, 
+.project-card {
+    border: 1px solid var(--border-color);
+    border-radius: 0; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.profile-card:hover, 
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+
+.preview-box {
+    height: 180px;
+    background: var(--light-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #eee;
+}
+
+
+.skill-badge {
+    background-color: var(--light-bg);
+    color: #212529;
+    border: 1px solid var(--border-color);
+    margin-right: 2px;
+}
+
+.footer-link {
+    color: var(--accent-info);
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.footer-link:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+
+.breadcrumb-item a {
+    color: var(--primary-dark);
+}
+
+.list-group-item-action:hover {
+    background-color: var(--light-bg);
+    color: var(--primary-dark);
+    font-weight: 500;
+}
+
+
+section .bg-white {
+    border-radius: 4px;
+}
