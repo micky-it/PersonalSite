@@ -10,12 +10,30 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
     <style>
-        body { background-color: #f8f9fa; }
-        .hero { background: linear-gradient(135deg, #212529, #343a40); color: white; }
-        .section-title { border-left: 5px solid #0d6efd; padding-left: 10px; margin-bottom: 15px; }
-        
-        .card { transition: all 0.4s ease-in-out; overflow: hidden; }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important; }
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #212529, #343a40);
+            color: white;
+        }
+
+        .section-title {
+            border-left: 5px solid #0d6efd;
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card {
+            transition: all 0.4s ease-in-out;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+        }
 
         /* Gestione Immagine */
         .img-container {
@@ -29,20 +47,61 @@
             margin-bottom: 15px;
             overflow: hidden;
         }
-        .img-container img { width: 100%; height: 100%; object-fit: cover; }
+
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
         /* Mostra/Nascondi testo */
-        .full-text { display: none; margin-top: 15px; }
-        .expanded-col .full-text { display: block; }
-        .expanded-col .short-intro { font-weight: bold; color: #0d6efd; }
+        .full-text {
+            display: none;
+            margin-top: 15px;
+        }
+
+        .expanded-col .full-text {
+            display: block;
+        }
+
+        .expanded-col .short-intro {
+            font-weight: bold;
+            color: #0d6efd;
+        }
 
         /* Layout quando espanso */
-        .expanded-col { flex: 0 0 100% !important; max-width: 100% !important; order: -1; }
-        .expanded-col .card-content-wrapper { display: flex; gap: 25px; flex-wrap: wrap; }
-        .expanded-col .img-container { flex: 0 0 300px; height: 250px; }
-        .expanded-col .text-content { flex: 1; min-width: 300px; }
+        .expanded-col {
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+            order: -1;
+        }
 
-        .btn-expand { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; }
+        .expanded-col .card-content-wrapper {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .expanded-col .img-container {
+            flex: 0 0 300px;
+            height: 250px;
+        }
+
+        .expanded-col .text-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .btn-expand {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .subtitle-nav {
+            font-size: 0.9rem;
+            color: #adb5bd;
+        }
     </style>
 </head>
 
@@ -50,9 +109,9 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#chi-sono">
+            <a class="navbar-brand fw-bold" href="index.html">
                 MICHELE MARTINELLI <span class="fw-light text-secondary mx-2">|</span> <span
-                    class="fw-light subtitle-nav">Chi sono</span>
+                    class="fw-light subtitle-nav">Home</span>
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -61,8 +120,10 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Progetti</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Progetti</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="progetti.html#pcto">PCTO (Alternanza)</a></li>
                             <li><a class="dropdown-item" href="progetti.html#progetti">Progetti Extrascolastici</a></li>
@@ -70,7 +131,8 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Materie Tecniche</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Materie
+                            Tecniche</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="tecniche.html#informatica">Informatica</a></li>
                             <li><a class="dropdown-item" href="tecniche.html#sistemi">Sistemi e Reti</a></li>
@@ -82,7 +144,7 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Materie
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Materie
                             Letterarie</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="letterarie.html#italiano">Italiano</a></li>
@@ -91,8 +153,13 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item"><a class="nav-link text-white" href="civica.html">Educazione Civica</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="civica.html">Educazione Civica</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contatti">Contatti</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -130,41 +197,56 @@
         </div>
 
         <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3" id="grid-container">
-            
+
             <div class="col transition-col">
                 <div class="card h-100 shadow-sm border-0 p-3">
                     <div class="card-body d-flex flex-column">
                         <h5 class="section-title fw-bold"><i class="bi bi-peace me-2"></i>IRC</h5>
-                        
+
                         <div class="card-content-wrapper">
                             <div class="img-container">
-                                <img src="https://www.insieme-per.it/wp-content/uploads/2024/04/Europa-pace-colomba.jpg" alt="IRC">
+                                <img src="https://www.insieme-per.it/wp-content/uploads/2024/04/Europa-pace-colomba.jpg"
+                                    alt="IRC">
                             </div>
-                            
+
                             <div class="text-content">
                                 <p class="small text-muted">Pace, giustizia, integrazione UE</p>
-                                
+
                                 <div class="full-text">
-                                    <p>Nella materia di Religione abbiamo parlato prevalentemente della pace, documenti dell’UE per
-                            l’integrazione e il ruolo della scuola nell’insegnare un modo di risoluzione pacifica dei
-                            conflitti, anche internazionali.
+                                    <p>Nella materia di Religione abbiamo parlato prevalentemente della pace, documenti
+                                        dell’UE per
+                                        l’integrazione e il ruolo della scuola nell’insegnare un modo di risoluzione
+                                        pacifica dei
+                                        conflitti, anche internazionali.
 
-                            Infatti, queste organizzazioni internazionali e l’Unione Europea promuovono la cooperazione
-                            e la solidarietà per evitare conflitti e garantire una più equa distribuzione delle risorse.
-                            Anche la scuola ha un ruolo fondamentale, perché educa gli studenti al dialogo, alla
-                            tolleranza e alla risoluzione pacifica dei conflitti.
+                                        Infatti, queste organizzazioni internazionali e l’Unione Europea promuovono la
+                                        cooperazione
+                                        e la solidarietà per evitare conflitti e garantire una più equa distribuzione
+                                        delle risorse.
+                                        Anche la scuola ha un ruolo fondamentale, perché educa gli studenti al dialogo,
+                                        alla
+                                        tolleranza e alla risoluzione pacifica dei conflitti.
 
-                            Un grande esempio di lotta pacifica che abbiamo visto a Religione è stato Martin Luther King
-                            Jr., che si batté contro il razzismo e per i diritti civili negli Stati Uniti attraverso
-                            proteste non violente e discorsi basati sull’uguaglianza e sulla fratellanza. Anche Mahatma
-                            Gandhi diffuse il principio della nonviolenza, chiamato “ahimsa”, dimostrando che il dialogo
-                            e la resistenza pacifica possono portare a grandi cambiamenti sociali e politici.
+                                        Un grande esempio di lotta pacifica che abbiamo visto a Religione è stato Martin
+                                        Luther King
+                                        Jr., che si batté contro il razzismo e per i diritti civili negli Stati Uniti
+                                        attraverso
+                                        proteste non violente e discorsi basati sull’uguaglianza e sulla fratellanza.
+                                        Anche Mahatma
+                                        Gandhi diffuse il principio della nonviolenza, chiamato “ahimsa”, dimostrando
+                                        che il dialogo
+                                        e la resistenza pacifica possono portare a grandi cambiamenti sociali e
+                                        politici.
 
-                            In Italia, Aldo Capitini fu uno dei principali promotori della pace e della nonviolenza.
-                            Egli sosteneva l’importanza della partecipazione di tutti i cittadini alla vita democratica
-                            e fondò la Marcia della Pace Perugia-Assisi, simbolo di fratellanza e cooperazione tra i
-                            popoli. Questi esempi insegnano che la pace non è soltanto assenza di guerra, ma anche
-                            rispetto dei diritti umani, giustizia sociale e dialogo tra le persone.</p>
+                                        In Italia, Aldo Capitini fu uno dei principali promotori della pace e della
+                                        nonviolenza.
+                                        Egli sosteneva l’importanza della partecipazione di tutti i cittadini alla vita
+                                        democratica
+                                        e fondò la Marcia della Pace Perugia-Assisi, simbolo di fratellanza e
+                                        cooperazione tra i
+                                        popoli. Questi esempi insegnano che la pace non è soltanto assenza di guerra, ma
+                                        anche
+                                        rispetto dei diritti umani, giustizia sociale e dialogo tra le persone.</p>
                                 </div>
                             </div>
                         </div>
@@ -181,7 +263,7 @@
                 <div class="card h-100 shadow-sm border-0 p-3">
                     <div class="card-body d-flex flex-column">
                         <h5 class="section-title fw-bold"><i class="bi bi-globe me-2"></i>Inglese</h5>
-                        
+
                         <div class="card-content-wrapper">
                             <div class="img-container">
                                 <img src="https://m.media-amazon.com/images/I/51XuuWUScqL._SL500_.jpg" alt="Inglese">
@@ -189,20 +271,31 @@
                             <div class="text-content">
                                 <p class="small text-muted">Innovation and society</p>
                                 <div class="full-text">
-                                    <p>Civic education in English focuses on topics such as jobs, poverty, innovation, knowledge,
-                            technology and artificial intelligence. During the Victorian Age, the Industrial Revolution
-                            brought important technological innovations and new job opportunities, but it also created
-                            poverty and social inequalities in industrial cities. Writers like Charles Dickens described
-                            the difficult living and working conditions of poor people and children in factories.
-                            During World War II, technology played an important role in communication, transportation
-                            and the development of powerful weapons. In this period, propaganda and information control
-                            became very important, showing how technology and knowledge can be used both to help society
-                            and to limit freedom.
-                            These themes are also present in Nineteen Eighty-Four by George Orwell. The novel describes
-                            a society where the government controls people through constant surveillance and
-                            manipulation of information. Orwell’s book makes us reflect on the importance of freedom,
-                            privacy and the responsible use of technology, themes that are still very relevant today
-                            with the development of artificial intelligence and social media.</p>
+                                    <p>Civic education in English focuses on topics such as jobs, poverty, innovation,
+                                        knowledge,
+                                        technology and artificial intelligence. During the Victorian Age, the Industrial
+                                        Revolution
+                                        brought important technological innovations and new job opportunities, but it
+                                        also created
+                                        poverty and social inequalities in industrial cities. Writers like Charles
+                                        Dickens described
+                                        the difficult living and working conditions of poor people and children in
+                                        factories.
+                                        During World War II, technology played an important role in communication,
+                                        transportation
+                                        and the development of powerful weapons. In this period, propaganda and
+                                        information control
+                                        became very important, showing how technology and knowledge can be used both to
+                                        help society
+                                        and to limit freedom.
+                                        These themes are also present in Nineteen Eighty-Four by George Orwell. The
+                                        novel describes
+                                        a society where the government controls people through constant surveillance and
+                                        manipulation of information. Orwell’s book makes us reflect on the importance of
+                                        freedom,
+                                        privacy and the responsible use of technology, themes that are still very
+                                        relevant today
+                                        with the development of artificial intelligence and social media.</p>
                                 </div>
                             </div>
                         </div>
@@ -218,30 +311,45 @@
                 <div class="card h-100 shadow-sm border-0 p-3">
                     <div class="card-body d-flex flex-column">
                         <h5 class="section-title fw-bold"><i class="bi bi-stopwatch-fill me-2"></i>Scienze Motorie</h5>
-                        
+
                         <div class="card-content-wrapper">
                             <div class="img-container">
-                                <img src="https://5d3e8c6de3.clvaw-cdnwnd.com/ebc541f309935485b71ef9972c9b2af1/200000442-caad3caad5/meo%2013.jpeg?ph=5d3e8c6de3" alt="Scienze Motorie">
+                                <img src="https://5d3e8c6de3.clvaw-cdnwnd.com/ebc541f309935485b71ef9972c9b2af1/200000442-caad3caad5/meo%2013.jpeg?ph=5d3e8c6de3"
+                                    alt="Scienze Motorie">
                             </div>
                             <div class="text-content">
                                 <p class="small text-muted">Tecnologia al servizio degli sport</p>
                                 <div class="full-text">
-                                    <p>In scienze motorie abbiamo invece approfondito di come, grazie all’innovazione, l’attività
-                            sportiva è diventata sempre più precisa, controllata e personalizzata, permettendo a
-                            professionisti e amatori di allenarsi in modo più efficace, ma anche come le competizioni
-                            siano diventate più eque e giuste. Abbiamo infatti anche analizzato diversi sport e tutti
-                            gli strumenti che sono stati introdotti.
-                            Alcuni esempi sono l’uso di dispositivi indossabili, come smartwatch e fitness tracker, per
-                            monitorare costantemente parametri importanti come la frequenza cardiaca, il consumo
-                            calorico e la qualità del sonno. Anche l’analisi video e i software avanzati che permettono
-                            di studiare i movimenti degli atleti, correggere errori tecnici e migliorare le strategie di
-                            gioco. Tutto questo ha reso l’allenamento più scientifico e basato sui dati. Inoltre,
-                            esistono numerosi strumenti specifici per la rilevazione e la misurazione delle prestazioni
-                            sportive, come sensori di movimento, GPS e test di valutazione fisica. Questi strumenti
-                            forniscono informazioni dettagliate su velocità, resistenza, forza e coordinazione, aiutando
-                            allenatori e atleti a monitorare i progressi nel tempo. In questo modo, la tecnologia non
-                            solo migliora le performance, ma contribuisce anche a prevenire infortuni e a promuovere uno
-                            sport più sicuro e consapevole.</p>
+                                    <p>In scienze motorie abbiamo invece approfondito di come, grazie all’innovazione,
+                                        l’attività
+                                        sportiva è diventata sempre più precisa, controllata e personalizzata,
+                                        permettendo a
+                                        professionisti e amatori di allenarsi in modo più efficace, ma anche come le
+                                        competizioni
+                                        siano diventate più eque e giuste. Abbiamo infatti anche analizzato diversi
+                                        sport e tutti
+                                        gli strumenti che sono stati introdotti.
+                                        Alcuni esempi sono l’uso di dispositivi indossabili, come smartwatch e fitness
+                                        tracker, per
+                                        monitorare costantemente parametri importanti come la frequenza cardiaca, il
+                                        consumo
+                                        calorico e la qualità del sonno. Anche l’analisi video e i software avanzati che
+                                        permettono
+                                        di studiare i movimenti degli atleti, correggere errori tecnici e migliorare le
+                                        strategie di
+                                        gioco. Tutto questo ha reso l’allenamento più scientifico e basato sui dati.
+                                        Inoltre,
+                                        esistono numerosi strumenti specifici per la rilevazione e la misurazione delle
+                                        prestazioni
+                                        sportive, come sensori di movimento, GPS e test di valutazione fisica. Questi
+                                        strumenti
+                                        forniscono informazioni dettagliate su velocità, resistenza, forza e
+                                        coordinazione, aiutando
+                                        allenatori e atleti a monitorare i progressi nel tempo. In questo modo, la
+                                        tecnologia non
+                                        solo migliora le performance, ma contribuisce anche a prevenire infortuni e a
+                                        promuovere uno
+                                        sport più sicuro e consapevole.</p>
                                 </div>
                             </div>
                         </div>
@@ -257,30 +365,45 @@
                 <div class="card h-100 shadow-sm border-0 p-3">
                     <div class="card-body d-flex flex-column">
                         <h5 class="section-title fw-bold"><i class="bi bi-clock-history me-2"></i>Storia</h5>
-                        
+
                         <div class="card-content-wrapper">
                             <div class="img-container">
-                                <img src="https://cultura.biografieonline.it/wp-content/uploads/2016/05/La-liberta-di-stampa-dopo-il-fascismo.jpg" alt="Storia">
+                                <img src="https://cultura.biografieonline.it/wp-content/uploads/2016/05/La-liberta-di-stampa-dopo-il-fascismo.jpg"
+                                    alt="Storia">
                             </div>
                             <div class="text-content">
                                 <p class="small text-muted">Informazione e propaganda</p>
                                 <div class="full-text">
-                                    <p>In storia abbiamo approfondito come nel corso del Novecento, la propaganda e il controllo
-                            dell’informazione hanno avuto un ruolo centrale, soprattutto nei regimi totalitari. Governi
-                            autoritari utilizzavano i mezzi di comunicazione per influenzare l’opinione pubblica,
-                            diffondere ideologie e rafforzare il proprio potere. Un esempio evidente si trova durante la
-                            Seconda Guerra Mondiale, quando la propaganda fu impiegata per sostenere lo sforzo bellico e
-                            orientare il consenso delle masse, come l'Istituto Luce in Italia. In questo contesto, la
-                            censura limitava fortemente la libertà di stampa: giornali, radio e altri mezzi di
-                            comunicazione venivano controllati dallo Stato, impedendo la diffusione di idee contrarie al
-                            regime. Al contrario, nelle democrazie la libertà di stampa è considerata un diritto
-                            fondamentale, perché garantisce il pluralismo delle opinioni e permette ai cittadini di
-                            essere informati in modo critico e consapevole. Con il passare del tempo, si è assistito
-                            anche a una grande evoluzione nella gestione delle informazioni: si è passati dai dati
-                            conservati su supporti cartacei a sistemi digitali sempre più avanzati, fino al cosiddetto
-                            cloud computing. Questa trasformazione ha reso le informazioni più accessibili e
-                            condivisibili, ma ha anche posto nuove sfide legate alla sicurezza, alla privacy e al
-                            controllo dei dati.</p>
+                                    <p>In storia abbiamo approfondito come nel corso del Novecento, la propaganda e il
+                                        controllo
+                                        dell’informazione hanno avuto un ruolo centrale, soprattutto nei regimi
+                                        totalitari. Governi
+                                        autoritari utilizzavano i mezzi di comunicazione per influenzare l’opinione
+                                        pubblica,
+                                        diffondere ideologie e rafforzare il proprio potere. Un esempio evidente si
+                                        trova durante la
+                                        Seconda Guerra Mondiale, quando la propaganda fu impiegata per sostenere lo
+                                        sforzo bellico e
+                                        orientare il consenso delle masse, come l'Istituto Luce in Italia. In questo
+                                        contesto, la
+                                        censura limitava fortemente la libertà di stampa: giornali, radio e altri mezzi
+                                        di
+                                        comunicazione venivano controllati dallo Stato, impedendo la diffusione di idee
+                                        contrarie al
+                                        regime. Al contrario, nelle democrazie la libertà di stampa è considerata un
+                                        diritto
+                                        fondamentale, perché garantisce il pluralismo delle opinioni e permette ai
+                                        cittadini di
+                                        essere informati in modo critico e consapevole. Con il passare del tempo, si è
+                                        assistito
+                                        anche a una grande evoluzione nella gestione delle informazioni: si è passati
+                                        dai dati
+                                        conservati su supporti cartacei a sistemi digitali sempre più avanzati, fino al
+                                        cosiddetto
+                                        cloud computing. Questa trasformazione ha reso le informazioni più accessibili e
+                                        condivisibili, ma ha anche posto nuove sfide legate alla sicurezza, alla privacy
+                                        e al
+                                        controllo dei dati.</p>
                                 </div>
                             </div>
                         </div>
@@ -296,31 +419,48 @@
                 <div class="card h-100 shadow-sm border-0 p-3">
                     <div class="card-body d-flex flex-column">
                         <h5 class="section-title fw-bold"><i class="bi bi-alphabet-uppercase me-2"></i>Italiano</h5>
-                        
+
                         <div class="card-content-wrapper">
                             <div class="img-container">
-                                <img src="https://cdn.prod.website-files.com/644c0ecc4a055c732a922d57/653b0045cc0c5e60418d5b80_internet-slang.png" alt="Italiano">
+                                <img src="https://cdn.prod.website-files.com/644c0ecc4a055c732a922d57/653b0045cc0c5e60418d5b80_internet-slang.png"
+                                    alt="Italiano">
                             </div>
                             <div class="text-content">
                                 <p class="small text-muted">Nuovo lessico e netiquette</p>
                                 <div class="full-text">
-                                    <p>In italiano abbiamo invece analizzato la scrittura, il nuovo vocabolario che si è andato a
-                            creare nel corso del tempo ed anche come ci si approccia online specialmente sui social ed
-                            in generale in Internet. Infatti il lessico e i registri linguistici variano proprio a
-                            seconda del mezzo e del pubblico in cui andiamo a scrivere. Nei social media prevale spesso
-                            un linguaggio informale, rapido e sintetico, mentre negli articoli giornalistici online si
-                            utilizza un registro più formale e preciso. Saper adattare il proprio linguaggio è
-                            fondamentale per comunicare in modo efficace e appropriato. L’analisi di testi giornalistici
-                            sul tema della sicurezza permette di sviluppare uno spirito critico nei confronti delle
-                            informazioni. Attraverso la lettura attenta, si possono individuare il punto di vista
-                            dell’autore, le fonti utilizzate e le strategie comunicative adottate per influenzare il
-                            lettore. Questo tipo di analisi aiuta a distinguere tra informazione attendibile e contenuti
-                            distorti o poco affidabili. Infine, la scrittura argomentativa in rete richiede chiarezza,
-                            coerenza e capacità di sostenere le proprie opinioni con argomentazioni valide. È importante
-                            anche rispettare le regole della netiquette, che promuove un comportamento corretto e
-                            rispettoso negli ambienti digitali, evitando linguaggi offensivi e favorendo un dialogo
-                            costruttivo.
-                        </p></p>
+                                    <p>In italiano abbiamo invece analizzato la scrittura, il nuovo vocabolario che si è
+                                        andato a
+                                        creare nel corso del tempo ed anche come ci si approccia online specialmente sui
+                                        social ed
+                                        in generale in Internet. Infatti il lessico e i registri linguistici variano
+                                        proprio a
+                                        seconda del mezzo e del pubblico in cui andiamo a scrivere. Nei social media
+                                        prevale spesso
+                                        un linguaggio informale, rapido e sintetico, mentre negli articoli giornalistici
+                                        online si
+                                        utilizza un registro più formale e preciso. Saper adattare il proprio linguaggio
+                                        è
+                                        fondamentale per comunicare in modo efficace e appropriato. L’analisi di testi
+                                        giornalistici
+                                        sul tema della sicurezza permette di sviluppare uno spirito critico nei
+                                        confronti delle
+                                        informazioni. Attraverso la lettura attenta, si possono individuare il punto di
+                                        vista
+                                        dell’autore, le fonti utilizzate e le strategie comunicative adottate per
+                                        influenzare il
+                                        lettore. Questo tipo di analisi aiuta a distinguere tra informazione attendibile
+                                        e contenuti
+                                        distorti o poco affidabili. Infine, la scrittura argomentativa in rete richiede
+                                        chiarezza,
+                                        coerenza e capacità di sostenere le proprie opinioni con argomentazioni valide.
+                                        È importante
+                                        anche rispettare le regole della netiquette, che promuove un comportamento
+                                        corretto e
+                                        rispettoso negli ambienti digitali, evitando linguaggi offensivi e favorendo un
+                                        dialogo
+                                        costruttivo.
+                                    </p>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -336,29 +476,42 @@
                 <div class="card h-100 shadow-sm border-0 p-3">
                     <div class="card-body d-flex flex-column">
                         <h5 class="section-title fw-bold"><i class="bi bi-newspaper me-2"></i>GPOI</h5>
-                        
+
                         <div class="card-content-wrapper">
                             <div class="img-container">
-                                <img src="https://imgcdn.agendadigitale.eu/wp-content/uploads/2024/12/10103524/gdpr-3-1.jpg" alt="GPOI">
+                                <img src="https://imgcdn.agendadigitale.eu/wp-content/uploads/2024/12/10103524/gdpr-3-1.jpg"
+                                    alt="GPOI">
                             </div>
                             <div class="text-content">
                                 <p class="small text-muted">Sicurezza e privacy nelle aziende</p>
                                 <div class="full-text">
-                                    <p>In GPOI abbiamo invece affrontato il tema aziendale, di come La sicurezza e la privacy
-                            rappresentano oggi requisiti fondamentali per qualsiasi organizzazione che gestisca dati,
-                            soprattutto in ambito digitale. Non si tratta solo di aspetti tecnici, ma anche
-                            organizzativi: è necessario definire politiche interne, ruoli e procedure per garantire la
-                            protezione delle informazioni e il rispetto dei diritti degli utenti. Un elemento centrale è
-                            la gestione del rischio, che consiste nell’identificare, valutare e ridurre le possibili
-                            minacce ai dati. Tra queste, i data breach (violazioni dei dati) possono avere impatti molto
-                            gravi, come la perdita di informazioni sensibili, danni economici e conseguenze
-                            reputazionali. Per questo le organizzazioni devono adottare misure preventive, come sistemi
-                            di sicurezza informatica, formazione del personale e piani di risposta agli incidenti. A
-                            livello normativo, un riferimento fondamentale è il Regolamento generale sulla protezione
-                            dei dati (GDPR), che stabilisce regole precise sulla raccolta, il trattamento e la
-                            conservazione dei dati personali. Il GDPR impone trasparenza, responsabilità e tutela dei
-                            diritti degli individui, rendendo la protezione dei dati un elemento essenziale per il
-                            funzionamento corretto e sicuro delle organizzazioni.</p>
+                                    <p>In GPOI abbiamo invece affrontato il tema aziendale, di come La sicurezza e la
+                                        privacy
+                                        rappresentano oggi requisiti fondamentali per qualsiasi organizzazione che
+                                        gestisca dati,
+                                        soprattutto in ambito digitale. Non si tratta solo di aspetti tecnici, ma anche
+                                        organizzativi: è necessario definire politiche interne, ruoli e procedure per
+                                        garantire la
+                                        protezione delle informazioni e il rispetto dei diritti degli utenti. Un
+                                        elemento centrale è
+                                        la gestione del rischio, che consiste nell’identificare, valutare e ridurre le
+                                        possibili
+                                        minacce ai dati. Tra queste, i data breach (violazioni dei dati) possono avere
+                                        impatti molto
+                                        gravi, come la perdita di informazioni sensibili, danni economici e conseguenze
+                                        reputazionali. Per questo le organizzazioni devono adottare misure preventive,
+                                        come sistemi
+                                        di sicurezza informatica, formazione del personale e piani di risposta agli
+                                        incidenti. A
+                                        livello normativo, un riferimento fondamentale è il Regolamento generale sulla
+                                        protezione
+                                        dei dati (GDPR), che stabilisce regole precise sulla raccolta, il trattamento e
+                                        la
+                                        conservazione dei dati personali. Il GDPR impone trasparenza, responsabilità e
+                                        tutela dei
+                                        diritti degli individui, rendendo la protezione dei dati un elemento essenziale
+                                        per il
+                                        funzionamento corretto e sicuro delle organizzazioni.</p>
                                 </div>
                             </div>
                         </div>
@@ -374,31 +527,44 @@
                 <div class="card h-100 shadow-sm border-0 p-3">
                     <div class="card-body d-flex flex-column">
                         <h5 class="section-title fw-bold"><i class="bi bi-router me-2"></i>Sistemi e Reti</h5>
-                        
+
                         <div class="card-content-wrapper">
                             <div class="img-container">
-                                <img src="https://imgcdn.agendadigitale.eu/wp-content/uploads/2018/01/29090852/crittografia_509910541.jpg" alt="Sistemi">
+                                <img src="https://imgcdn.agendadigitale.eu/wp-content/uploads/2018/01/29090852/crittografia_509910541.jpg"
+                                    alt="Sistemi">
                             </div>
                             <div class="text-content">
                                 <p class="small text-muted">Attacchi, rischi informatici e come proteggersi</p>
                                 <div class="full-text">
-                                    <p>Nel percorso di Sistemi e Reti abbiamo approfondito i principali temi legati alla sicurezza
-                            informatica e alla protezione dei dati. In particolare, sono stati studiati i principi della
-                            cybersicurezza, facendo riferimento alla triade CIA: riservatezza (Confidentiality),
-                            integrità (Integrity) e disponibilità (Availability) delle informazioni.
-                            Un argomento importante è stato quello dell’autenticazione, cioè i metodi utilizzati per
-                            verificare l’identità degli utenti che accedono a sistemi e reti, attraverso password,
-                            autenticazione a due fattori, certificati e firme digitali.
-                            Abbiamo inoltre analizzato la crittografia, fondamentale per proteggere i dati durante la
-                            trasmissione. Sono state approfondite la crittografia a chiave simmetrica, in cui la stessa
-                            chiave viene usata sia per cifrare che per decifrare i dati, e la crittografia a chiave
-                            asimmetrica, che utilizza invece una coppia di chiavi: una pubblica e una privata. In questo
-                            contesto è stato studiato anche il protocollo SSL/TLS, utilizzato per garantire
-                            comunicazioni sicure su Internet, ad esempio nei siti web HTTPS.
-                            Infine, sono state esaminate le principali minacce informatiche, come i virus in generale, e
-                            le relative contromisure, tra cui firewall, antivirus, proxy e buone pratiche di sicurezza.
-                            Abbiamo anche analizzato i tipi di attacchi informatici verso reti ed infrastrutture e come
-                            potersi difendere da essi.</p>
+                                    <p>Nel percorso di Sistemi e Reti abbiamo approfondito i principali temi legati alla
+                                        sicurezza
+                                        informatica e alla protezione dei dati. In particolare, sono stati studiati i
+                                        principi della
+                                        cybersicurezza, facendo riferimento alla triade CIA: riservatezza
+                                        (Confidentiality),
+                                        integrità (Integrity) e disponibilità (Availability) delle informazioni.
+                                        Un argomento importante è stato quello dell’autenticazione, cioè i metodi
+                                        utilizzati per
+                                        verificare l’identità degli utenti che accedono a sistemi e reti, attraverso
+                                        password,
+                                        autenticazione a due fattori, certificati e firme digitali.
+                                        Abbiamo inoltre analizzato la crittografia, fondamentale per proteggere i dati
+                                        durante la
+                                        trasmissione. Sono state approfondite la crittografia a chiave simmetrica, in
+                                        cui la stessa
+                                        chiave viene usata sia per cifrare che per decifrare i dati, e la crittografia a
+                                        chiave
+                                        asimmetrica, che utilizza invece una coppia di chiavi: una pubblica e una
+                                        privata. In questo
+                                        contesto è stato studiato anche il protocollo SSL/TLS, utilizzato per garantire
+                                        comunicazioni sicure su Internet, ad esempio nei siti web HTTPS.
+                                        Infine, sono state esaminate le principali minacce informatiche, come i virus in
+                                        generale, e
+                                        le relative contromisure, tra cui firewall, antivirus, proxy e buone pratiche di
+                                        sicurezza.
+                                        Abbiamo anche analizzato i tipi di attacchi informatici verso reti ed
+                                        infrastrutture e come
+                                        potersi difendere da essi.</p>
                                 </div>
                             </div>
                         </div>
@@ -423,10 +589,10 @@
         function toggleExpand(button) {
             const col = button.closest('.transition-col');
             const isExpanded = col.classList.contains('expanded-col');
-            
+
             // Chiudi eventuali altre card aperte per pulizia
             document.querySelectorAll('.expanded-col').forEach(el => {
-                if(el !== col) {
+                if (el !== col) {
                     el.classList.remove('expanded-col');
                     el.querySelector('.btn-expand').innerHTML = '<i class="bi bi-arrows-angle-expand me-1"></i> Espandi';
                 }
@@ -435,7 +601,7 @@
             if (!isExpanded) {
                 col.classList.add('expanded-col');
                 button.innerHTML = '<i class="bi bi-arrows-angle-contract me-1"></i> Riduci';
-                
+
                 // Scroll verso la card
                 setTimeout(() => {
                     col.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -449,4 +615,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
